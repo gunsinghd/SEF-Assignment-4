@@ -5,6 +5,9 @@
 **Gundeep Dhillon**  
 Student ID: **s4102442**
 
+**Yee Man Chan**  
+Student ID: **s4024211**
+
 ---
 
 ##Task Overview – Person Class
