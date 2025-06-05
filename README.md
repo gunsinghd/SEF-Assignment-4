@@ -5,6 +5,15 @@
 **Gundeep Dhillon**  
 Student ID: **s4102442**
 
+**Yee Man Chan**  
+Student ID: **s4024211**
+
+**Tuong Duy Duong**
+Student ID: **s3479994**
+
+**Ko Yun Chu**
+Student ID: **s4076701**
+
 ---
 
 ##Task Overview – Person Class
