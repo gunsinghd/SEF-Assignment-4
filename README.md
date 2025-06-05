@@ -71,12 +71,6 @@ The implementation includes comprehensive validation methods:
 - isFirstEven() - Checks if first character of ID is even number
 - personExists() - Prevents duplicate person entries
 
-File Structure
-
-person.txt: Stores person data (comma-separated)
-demerits.txt: Stores offense records
-Person.java: Main class implementation
-Test files: JUnit test cases for all functions
 ---
 
 ##Key Features
