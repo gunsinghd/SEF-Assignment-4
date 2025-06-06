@@ -1,0 +1,3 @@
+23ab!@cdEF,John,Smith,123|Main Street|Melbourne|Victoria|Australia,15-05-1990,0,false
+45xy#$mnOP,Jane,Doe,456|Queen Street|Sydney|Victoria|Australia,22-08-1985,3,false
+67pq%^rsGH,Bob,Johnson,789|Collins Street|Melbourne|Victoria|Australia,10-12-1995,0,false
