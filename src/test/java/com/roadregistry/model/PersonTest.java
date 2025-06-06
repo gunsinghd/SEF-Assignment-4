@@ -31,16 +31,11 @@ public class PersonTest {
         Files.write(Paths.get(PERSON_FILE), testData);
         
         // Clean up demerits file if it exists (start fresh for each test)
-        Files.deleteIfExists(Paths.get(DEMERITS_FILE));
+        // Files.deleteIfExists(Paths.get(DEMERITS_FILE));
     }
 
     @AfterEach 
     public void tearDown() throws IOException {
-        // Clean up test files - but keep demerits.txt to see the results!
-        //Files.deleteIfExists(Paths.get(PERSON_FILE));
-        
-        // COMMENT OUT this line to keep demerits.txt file
-        // Files.deleteIfExists(Paths.get(DEMERITS_FILE));
         
         System.out.println("demerits.txt file preserved - check the contents to see logged demerit points!");
     }

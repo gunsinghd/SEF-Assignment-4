@@ -1,3 +1,4 @@
-23ab!@cdEF,John,Smith,123|Main Street|Melbourne|Victoria|Australia,15-05-1990,0,false
-45xy#$mnOP,Jane,Doe,456|Queen Street|Sydney|Victoria|Australia,22-08-1985,3,false
-67pq%^rsGH,Bob,Johnson,789|Collins Street|Melbourne|Victoria|Australia,10-12-1995,0,false
+23AB$%12XY,John,Smith,123 Main St|Melbourne|3000|Victoria|AU,15-05-1995,0,false
+45CD@#34EF,Jane,Doe,456 Oak Ave|Melbourne|3001|Victoria|AU,20-08-1990,5,false
+67EF!*56GH,Bob,Wilson,789 Pine Rd|Melbourne|3002|Victoria|AU,10-12-2010,2,false
+48XY@#12AB,Alice,Brown,321 Elm St|Melbourne|3003|Victoria|AU,25-03-1985,8,true
