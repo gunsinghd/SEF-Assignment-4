@@ -8,10 +8,10 @@ Student ID: **s4102442**
 **Yee Man Chan**  
 Student ID: **s4024211**
 
-**Tuong Duy Duong**
+**Tuong Duy Duong**  
 Student ID: **s3479994**
 
-**Ko Yun Chu**
+**Ko Yun Chu**  
 Student ID: **s4076701**
 
 ---
@@ -20,9 +20,10 @@ Student ID: **s4076701**
 
 This repository contains the implementation and unit testing of core functions related to the Person class in the Road Registry platform. The implementation includes three main functions with comprehensive validation and testing.
 
-Functions Implemented
+Core Functions
 
 1. addPerson()
+
 Purpose: Adds a new person to the system by storing their information in a TXT file.
 
 Key Features:
@@ -34,7 +35,9 @@ Key Features:
 - Stores data in comma-separated format: ID,FirstName,LastName,Address,Birthday,0,false
 - Returns true if successful, false otherwise
 
+
 2. updatePersonalDetails()
+
 Purpose: Updates existing person's details in the TXT file with specific business rules.
 
 Key Features:
@@ -47,7 +50,9 @@ Key Features:
 - Comprehensive validation for all updated fields
 - Returns true if successful, false otherwise
 
+
 3. addDemeritPoints()
+
 Purpose: Records demerit points for traffic offenses and manages suspension status.
 
 Key Features:
@@ -63,13 +68,12 @@ Key Features:
 
 Validation Methods
 The implementation includes comprehensive validation methods:
-- isValidPersonID() - Validates 10-character person ID format
-- isValidName() - Validates name format and length
-- isValidAddress() - Validates address format with Victoria state requirement
-- isValidBirthdate() - Validates date format and reasonable date range
-- calculateAge() - Calculates age from birthdate
-- isFirstEven() - Checks if first character of ID is even number
-- personExists() - Prevents duplicate person entries
+- isValidPersonID(): Validates 10-character person ID format
+- isValidName(): Validates name format and length (1-50 chars)
+- isValidAddress(): Validates pipe-separated address with Victoria state
+- isValidBirthdate(): Validates DD-MM-YYYY format and reasonable date range
+- calculateAge(): Calculates current age from birthdate
+- isFirstEven(): Checks if first character of ID is even number
 
 ---
 
@@ -82,12 +86,29 @@ The implementation includes comprehensive validation methods:
 
 ---
 
-##Unit Testing
+Unit Testing
+Test Coverage
+75 comprehensive test cases across 15 test methods covering:
 
-Implemented **5 test cases** using JUnit 5 for:
-- Valid input (under and over 21)
-- Invalid date formats
-- Invalid point values
-- Suspension threshold crossing
+addPerson() Tests (25 test cases)
+- Valid inputs with different data combinations
+- Invalid person ID formats (short, missing special chars, lowercase)
+- Invalid address formats (missing pipes, wrong state, incomplete)
+- Invalid birthdate formats (wrong format, future dates, >100 years old)
+- Invalid name formats (with digits, empty, too long)
 
-Tests are located in:
+
+updatePersonalDetails() Tests (25 test cases)
+- Valid updates (names only, birthdate only)
+- Invalid new ID formats
+- Under-18 address change restrictions
+- Birthday change isolation rules
+- Even-digit ID change restrictions
+
+
+addDemeritPoints() Tests (25 test cases)
+- Valid inputs for different age groups
+- Invalid date formats (YYYY-MM-DD, MM/DD/YYYY, single digits)
+- Invalid point values (0, 7, negative numbers)
+- Suspension logic for 21+ with >12 points
+- Suspension logic for <21 with >6 points
