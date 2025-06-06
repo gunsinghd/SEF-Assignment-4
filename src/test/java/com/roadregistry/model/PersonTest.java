@@ -37,7 +37,7 @@ public class PersonTest {
     @AfterEach 
     public void tearDown() throws IOException {
         // Clean up test files - but keep demerits.txt to see the results!
-        Files.deleteIfExists(Paths.get(PERSON_FILE));
+        //Files.deleteIfExists(Paths.get(PERSON_FILE));
         
         // COMMENT OUT this line to keep demerits.txt file
         // Files.deleteIfExists(Paths.get(DEMERITS_FILE));
@@ -99,7 +99,6 @@ public class PersonTest {
         p1.birthdate = "15-03-1990";
         boolean result1 = p1.addPerson();
         assertFalse(result1, "Short ID was incorrectly accepted");
-
         // Test Case 2_Test Data 2 - ID without enough special characters
         Person p2 = new Person();
         p2.personID = "23ABCDEF12";
